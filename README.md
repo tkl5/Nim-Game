@@ -1,4 +1,4 @@
-# Nim-Game
+# Nim Game
 
 Simulates the game of Nim, in which two players alternate in removing the stones arranged in piles. On each turn, a player must remove one or more stones, provided all stones come from the same pile. The player that takes the last stone/s from the only remaining pile wins the game. First, go to the following site to play the game a few times to understand how it is played: http://www.dotsphinx.com/games/nim/
 (the piles are arranged in columns and clicking on a specific dot indicates you want to remove the stones from that position up). 
@@ -39,10 +39,137 @@ Your Nim game should proceed as follows:
 You are given a sample program run below – make sure your prompts look like the ones provided in the sample run.
 
 
-Hint: the easiest approach to this problem is to represent the number of stones in each pile as list elements, i.e. for the example above, our list may look like this:
+# Sample Run
+
+Playa 1, enter your name:  Superman
 
 
-  ---	3	1	2	8
+Playa 2, enter your name:  Batman
 
-  0	1	2	3	4
+Let's look at the board now.
+
+----------------------------
+
+Pile 1:	O
+
+Pile 2:	OOO
+
+Pile 3:	OOO
+
+----------------------------
+
+Hint: nim sum is 1
+
+Pick 1 stones from pile 1 
+
+Superman, how many stones to remove? 2
+
+Pick a pile to remove from:  a
+
+Hmmm. You entered an invalid value. Try again, Superman.
+
+Superman, how many stones to remove? 2
+
+Pick a pile to remove from:  4
+
+Hmmm. You entered an invalid value. Try again, Superman.
+
+Superman, how many stones to remove? a
+
+Pick a pile to remove from:  3
+
+Hmmm. You entered an invalid value. Try again, Superman.
+
+Superman, how many stones to remove? 4
+
+Pick a pile to remove from:  3
+
+Hmmm. You entered an invalid value. Try again, Superman.
+
+Superman, how many stones to remove? 2
+
+Pick a pile to remove from:  a
+
+Hmmm. You entered an invalid value. Try again, Superman.
+
+Superman, how many stones to remove? 3
+
+Pick a pile to remove from: 2
+
+Let's look at the board now.
+
+----------------------------
+
+Pile 1:	O
+
+Pile 2:	
+
+Pile 3:	OOO
+
+----------------------------
+
+Hint: nim sum is 2
+
+Pick 2 stones from pile 3 
+
+Batman, how many stones to remove? 2
+
+Pick a pile to remove from: 3
+
+Let's look at the board now.
+
+----------------------------
+
+Pile 1:	O
+
+Pile 2:	
+
+Pile 3:	O
+
+----------------------------
+
+Hint: nim sum is 0
+
+Pick 1 stones from pile 3
+
+Superman, how many stones to remove? 1
+
+Pick a pile to remove from: 3
+
+Let's look at the board now.
+
+----------------------------
+
+Pile 1:	O
+
+Pile 2:	
+
+Pile 3:	
+
+----------------------------
+
+Hint: nim sum is 1
+
+Pick 1 stones from pile 1
+
+Batman, how many stones to remove? 1
+
+Pick a pile to remove from: 1
+
+Let's look at the board now.
+
+----------------------------
+
+Pile 1:	
+
+Pile 2:	
+
+Pile 3:	
+
+----------------------------
+
+Batman is the winner of this round!
+
+Do you want to play again? Enter y for yes, anything for no: 
+
 
